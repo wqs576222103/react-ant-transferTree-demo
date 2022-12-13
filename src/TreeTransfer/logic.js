@@ -207,3 +207,16 @@ export const list2Tree = ({
     loop(nodes);
     return { childKeys, leafKeys };
   };
+
+  export const generateKeys = () => {
+    const keys = []
+    for(let i = 0; i < 10000; i++) {
+      keys.push(`aa.bbb.ccc.eee_FFFF_p${i}`)
+      keys.push(`aa.bbb.ccc.eee_FF2F_p${i}`)
+      keys.push(`aa.44.ccc.e3e_FFFF_p${i}`)
+      keys.push(`aa.44.ccc.e2e__p${i}`)
+      keys.push(`aa.44.ccc.e1e_FFFF_p${i}`)
+    }
+    return keys
+  }
+  
